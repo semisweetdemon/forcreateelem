@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	color: aqua;
+	margin-bottom: 10px;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	max-width: 900px;
+}
+
+.square {
+	width: 30px;
+	height: 30px;
+	background: #000;
+	box-shadow: 0 0 3px #222;
+	transition: 2s;
+}
+
+.square:hover {
+	transition-duration: 0s;
+}
+
+.buttons {
+	display: flex;
+	gap: 30px;
+	margin-top: 20px;
+}
+
+button {
+	padding: 10px 30px;
+	color: #000;
+	border: none;
+	transition: 1s;
+}
+
+button:hover {
+	background: aqua;
+	transition-duration: 1s;
+}
+
+.whitediv {
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: 2px solid white;
+	position: absolute;
+	z-index: 1000;
+	pointer-events: none;
+	transform: translateY(-50%) translateX(-50%);
+	transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
+}
